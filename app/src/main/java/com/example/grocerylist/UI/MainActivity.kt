@@ -1,16 +1,14 @@
 package com.example.grocerylist.UI
 
-import android.media.session.MediaSessionManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.grocerylist.Adapter.GroceryAdapter
 import com.example.grocerylist.Database.Entity.GroceryItems
 import com.example.grocerylist.Database.GroceryDatabase
 import com.example.grocerylist.Database.GroceryRepository
-import com.example.grocerylist.Adapter.GroceryAdapter
 import com.example.grocerylist.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,8 +23,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
 
 
 
@@ -64,8 +60,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
-
 
 
 }

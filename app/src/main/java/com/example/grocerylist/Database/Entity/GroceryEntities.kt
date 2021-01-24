@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "grocery_items")
 
- data class GroceryItems(
+data class GroceryItems(
     @ColumnInfo(name ="itemName")
     var itemName:String,
     @ColumnInfo(name = "itemQuantity")

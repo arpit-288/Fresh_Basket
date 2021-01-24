@@ -6,7 +6,7 @@
     <string name="itemName">Banana</string>
     <string name="itemQuantity">35</string>
     <string name="itemPrice">250Rs</string>
-    <string name="totalCost">20</string>
+    <string name="totalCost">250</string>
     <string name="totalCostTitle">Total Cost</string>
     <string name="title">Add Items to your cart</string>
     <string name="etItem">Item</string>

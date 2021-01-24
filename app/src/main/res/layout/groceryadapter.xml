@@ -9,118 +9,94 @@
 
     <TextView
         android:id="@+id/txtItemName"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="13dp"
         android:fontFamily="@font/rokkitt"
         android:text="@string/itemName"
         android:textColor="@color/white"
         android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTotalCostTitle"
-        app:layout_constraintEnd_toStartOf="@+id/txtItemQuantity"
-        app:layout_constraintStart_toEndOf="@+id/cbItemCheck"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtItemQuantity"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
 
-        android:layout_marginEnd="34dp"
-
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="19dp"
         android:text="@string/itemQuantity"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtItemName"
         app:layout_constraintEnd_toStartOf="@+id/txtItemPrice"
-        app:layout_constraintStart_toEndOf="@+id/txtItemName"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtItemPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
         android:text="@string/itemPrice"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtItemTotalCost"
-        app:layout_constraintEnd_toStartOf="@+id/ibDelete"
-        app:layout_constraintStart_toEndOf="@+id/txtItemQuantity"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <CheckBox
-        android:id="@+id/cbItemCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@color/white"
-        android:shadowColor="@color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtItemName"
-        app:layout_constraintEnd_toStartOf="@+id/txtItemName"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/ibDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalCostTitle"
+        app:layout_constraintTop_toTopOf="@+id/txtItemName" />
 
     <ImageButton
         android:id="@+id/ibDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:background="@color/black"
         android:src="@drawable/ic_action_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtItemPrice"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtItemTotalCost"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:background="@drawable/adapter2"
         android:padding="8dp"
         android:paddingLeft="12dp"
         android:text="@string/totalCost"
-        android:visibility="invisible"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtTotalCostTitle"
-        app:layout_constraintTop_toTopOf="@+id/txtTotalCostTitle"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintStart_toStartOf="@+id/txtItemPrice" />
 
     <TextView
         android:id="@+id/txtTotalCostTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="16dp"
         android:text="@string/totalCostTitle"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtItemTotalCost"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/txtItemName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
